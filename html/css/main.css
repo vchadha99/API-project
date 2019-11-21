@@ -1,0 +1,54 @@
+
+#navbar 
+{
+    display: flex;
+    list-style-type: none;                                                 
+    font-size: 20px;
+    justify-content: flex-end; 
+    margin: 0px;
+    position: fixed;
+    top: 0;
+    width: 95%;
+}
+      
+      
+  
+  
+.navitem {
+    display: flex;
+    margin: 10px;
+    font-family: Arial;
+    border-radius: 5px;
+    background:  rgb(131, 3, 250) ;
+    padding: 5px ;
+    position: relative;
+    
+}
+
+.link
+{
+    color: rgb(0, 73, 30);
+    text-decoration-line: none;
+}
+
+.logo 
+{
+    margin-left: none;
+}
+   
+.logo img 
+{
+    display: block;
+}
+
+.planet
+{
+    text-decoration-color: salmon;
+}
+#heading
+{
+    text-align: center;
+    color:yellowgreen;
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+}
