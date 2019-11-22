@@ -18,7 +18,15 @@
     <body id = "indexbody">
          <center>
          <h1 class="text-center text-capitalize pt-5" style="color:rgb(255, 0, 0)"><b>Star Wars</b></h1>
-         <h4 id="yourname" style="font-family :Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">Hello </h4>
+         <h4 id="yourname" style="font-family :Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">Hello</h4>
+             <script>
+                 $(window).on('load',function()
+                 {
+                    $('#myModal').modal('show');
+                    var name=JSON.parse(localStorage.getItem("Name"));
+                    $('#yourname').html($('#yourname').html()+"<b>"+name+"</b>, What would you like to do Today?");
+                 });
+             </script>
         </center>
         
          <hr class="w-25 mx-auto pt-5">
