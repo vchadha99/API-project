@@ -3,6 +3,12 @@ function message()
   alert("Enter your name first");
 }
 
+$(window).on('load',function(){
+  $('#myModal').modal('show');
+
+var name=JSON.parse(localStorage.getItem("Name"));
+$('#yourname').html($('#yourname').html()+"<b>"+name+"</b>, What would you like to do Today?");
+});
 
 
 function openPage(pageUrl)
