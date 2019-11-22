@@ -25,9 +25,9 @@ function loadplannets()
            for(var i = 0 ; i < data.results.length ; i++)
            {
             name = "<div class = 'plannet' style= 'color:skyblue; font-size: 35px;'>" + 
-            name + data.results[i].name + "<p style = 'color:green ; font-size: 25px'> Terrain : " + 
-            data.results[i].terrain + "<p style = 'color:white; font-size: 25px'> Population : " + 
-            data.results[i].population +"</div>" + "<br><br>"  ;
+            name + data.results[i].name + "<div style = 'color:green ; font-size: 25px'> Terrain : " + 
+            data.results[i].terrain + "</div><div style = 'color:white; font-size: 25px'> Population : " + 
+            data.results[i].population +"</div></div>" + "<br><br>"  ;
            }
          }
         document.getElementById('planets').innerHTML = name ;
@@ -52,9 +52,9 @@ function loadfilms()
            for(var i = 0 ; i < data.results.length ; i++)
            {
             title = "<div class = 'film' style= 'color:skyblue; font-size: 35px;'>" + 
-            title + data.results[i].title + "<p style = 'color: rgb(162, 243, 96); font-size: 25px'> Director : " + 
-            data.results[i].director + "<p style = 'color:white ; font-size: 25px'> Release Date : " + 
-            data.results[i].release_date +"</div>" + "<br>"  ;
+            title + data.results[i].title + "<div style = 'color: rgb(162, 243, 96); font-size: 25px'> Director : " + 
+            data.results[i].director + "</div><div style = 'color:white ; font-size: 25px'> Release Date : " + 
+            data.results[i].release_date +"</div></div>" + "<br>"  ;
            }
          }
         document.getElementById('films').innerHTML = title ;
@@ -79,9 +79,9 @@ function loadships()
            for(var i = 0 ; i < data.results.length ; i++)
            {
             name = "<div class = 'starship' style= 'color:navy; font-size: 35px;'>" + 
-            name + data.results[i].name + "<p style = 'color: rgb(0, 73, 30); font-size: 25px'> Manufacturer : " + 
-            data.results[i].manufacturer + "<p style = 'color:white ; font-size: 25px'> Rating : " + 
-            data.results[i].hyperdrive_rating +"</div>" + "<br>"  ;
+            name + data.results[i].name + "<div style = 'color: rgb(0, 73, 30); font-size: 25px'> Manufacturer : " + 
+            data.results[i].manufacturer + "</div><div style = 'color:white ; font-size: 25px'> Rating : " + 
+            data.results[i].hyperdrive_rating +"</div></div>" + "<br>"  ;
            }
          }
         document.getElementById('ships').innerHTML = name ;
@@ -106,9 +106,9 @@ function loadvehicles()
            for(var i = 0 ; i < data.results.length ; i++)
            {
             name = "<div class = 'starship' style= 'color:navy; font-size: 35px;'>" + 
-            name + data.results[i].name + "<p style = 'color: rgb(0, 73, 30); font-size: 25px'> Manufacturer : " + 
-            data.results[i].manufacturer + "<p style = 'color:white ; font-size: 25px'> Crew Size : " + 
-            data.results[i].crew +"</div>" + "<br>" ;
+            name + data.results[i].name + "<div style = 'color: rgb(0, 73, 30); font-size: 25px'> Manufacturer : " + 
+            data.results[i].manufacturer + "</div><div style = 'color:white ; font-size: 25px'> Crew Size : " + 
+            data.results[i].crew +"</div></div>" + "<br>" ;
            }
          }
         document.getElementById('Vehicles').innerHTML = name ;
